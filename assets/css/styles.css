@@ -1,0 +1,656 @@
+:root {
+    --primary: #0F1B4C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Common */
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 98px;
+    padding: 18px 16px;
+    border-radius: 12px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Class nay dung de gioi han noi dung khi noi dung qua dai */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ========= Header ========== */
+.header {
+    position: relative;
+    background: #E6F0FF;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+
+.navbar ul li a {
+    padding: 8px 14px;
+    color: #4F5361;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.navbar .action {
+    margin-left: auto;
+}
+
+.navbar .action-link {
+    margin-right: 18px;
+    color: var(--primary);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.navbar .action-btn {
+    padding: 13px 16px;
+    border-radius: 8px;
+}
+
+/* ========== Hero =========== */
+.hero {
+    margin-top: 130px;
+}
+
+.hero .info {
+    width: 50.4%;
+}
+
+.hero .subtitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #687690;
+}
+
+.hero .title {
+    margin-top: 8px;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+    color: #000336;
+}
+
+.hero .desc {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.77;
+    text-align: left;
+    color: #5A6473;
+}
+
+.hero .btn.hero-cta {
+    min-width: 170px;
+    margin-top: 40px;
+}
+
+.hero .hero-img {
+    position: absolute;
+    right: calc(((100vw - 1110px) / 2) - 100px);
+    bottom: 0;
+}
+
+/* ========== Client ======== */
+.clients {
+    margin-top: 79px;
+    padding: 43px 64px;
+}
+
+.clients .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-desc {
+    margin-top: 23px;
+}
+
+.row-desc p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: left;
+    color: #7D8589;
+}
+
+.content .image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.content .image img:nth-child(3) {
+    padding: 32px 41px 23px 42px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+    background: #fff;
+}
+
+/* ============== Guide ============= */
+.guides {
+    margin-top: 40px;
+    padding: 93px 0 79px 0;
+}
+
+.guides .subtitle {
+    position: relative;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    color: #000339;
+}
+
+.guides .subtitle::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+
+.guides .desc {
+    margin: 20px auto 0 auto;
+    width: 459px;
+    max-width: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+    text-align: center;
+    color: #5A6473;
+}
+
+.guides .guide-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 140px;
+}
+
+.guide-list .guide-item {
+    text-align: center;
+}
+
+.guide-list .guide-item h3 {
+    margin-top: 26px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #3B3C45;
+}
+
+.guide-list .guide-item a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #0689FF;
+}
+
+.guide-list .guide-item span {
+    margin-right: 6px;
+}
+
+.guides .guide-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.guides .guide-cta .btn {
+    min-width: 170px;
+}
+
+/* =============== Feature =============== */
+.featured {
+    margin-top: 41px;
+    padding: 110px 0px;
+    background: #F5FAFE;
+}
+
+.featured .sub-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #000339;
+}
+
+.featured .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.featured .row .desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+    color: #5A6473;
+}
+
+.featured .row .link {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #0689FF;
+}
+
+.featured .row .link img {
+    margin-left: 8px;
+}
+
+.featured .list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.featured .item {
+    flex: 1;
+    background: #fff;
+    box-shadow: 0px 65px 80px -46px #E2EEF999;
+    border-radius: 12px;
+}
+
+.featured .item .thumb {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.featured .body {
+    padding: 17px 20px 24px 20px;
+}
+
+.featured .list .item .title a {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #000339;
+}
+
+.featured .list .item .desc {
+    margin-top: 11px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #A3A6AB;
+
+    /* Su dung trong truong hop noi dung khong co dau cach */
+    word-break: break-all;
+}
+
+.featured .list .info {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.featured .list .info .label {
+    margin-left: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    color: #4D4D52;
+}
+
+.featured .list .info .icon {
+    margin-left: 22px;
+}
+
+.featured .list .info .icon:first-child {
+    margin-left: 0;
+}
+
+/* ============ Stats ============= */
+.stats {
+    margin-top: 75px;
+    padding: 50px 0;
+}
+
+.stats .content {
+    width: 1048px;
+}
+
+.stats .row {
+    display: flex;
+}
+
+.stats .img-block,
+.stats .info {
+    width: 50%;
+}
+
+.stats .img-block {
+    position: relative;
+}
+
+.stats .info {
+    padding: 79px 0 0 165px;
+}
+
+.stats .img-block .image {
+    display: block;
+    margin-left: auto;
+    width: 400px;
+    height: 460px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.stats .sub-title {
+    position: relative;
+    width: 269px;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.29;
+    color: #000339;
+}
+
+.stats .sub-title::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    content: "";
+    display: block;
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+}
+
+.stats .desc {
+    width: 309px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5a6473;
+}
+
+.stats-trend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 239px;
+    padding: 45px 22px 40px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #fff;
+}
+
+.stats-trend .value {
+    font-weight: 700;
+    font-size: 2.6rem;
+    letter-spacing: 0.01em;
+    color: #000339;
+}
+
+.stats-trend .icon {
+    margin-left: auto;
+}
+
+.stats-trend .desc {
+    width: 194px;
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #a7a7a7;
+}
+
+.stats-trend .separate {
+    height: 1.2px;
+    margin-top: 25px;
+    background: #e9e9e9;
+}
+
+.stats .avatar-block {
+    margin-top: 26px;
+    display: flex;
+    gap: 16px 14px;
+    flex-wrap: wrap;
+}
+
+.stats .avatar-block .avatar-group {
+    display: flex;
+}
+
+.stats .avatar-block .avatar-group .avatar {
+    width: 16px;
+    height: 16px;
+    margin-left: -3px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.stats .avatar-block .avatar-group .avatar:first-child {
+    margin-left: 0;
+}
+
+.stats .avatar-block .avatar-group .avatar.no-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1F3BB1;
+}
+
+.stats .avatar-block .avatar-group .avatar.no-avatar span {
+    font-size: 0.7rem;
+    font-weight: 450;
+    color: #fff;
+}
+
+.stats .row-qty {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    padding: 0 33px 0 33px;
+}
+
+.stats .qty-item .qty {
+    font-size: 6.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #000000;
+}
+
+.stats .qty-item .qty-desc {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #7B8087;
+}
+
+/* =========== Subscription ============ */
+.subscription {
+    margin-top: 90px;
+}
+
+.subscription .body {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 370px;
+    background: #063183;
+    border-radius: 20px;
+}
+
+.subscription .info {
+    width: 671px;
+    max-width: 100%;
+    padding: 0 80px 0 80px;
+}
+
+.subscription .info .sub-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.subscription .info .desc {
+    margin-top: 15px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.88;
+    color: #fff;
+}
+
+.subscription .info .btn-sub {
+    min-width: 151px;
+    margin-top: 20px;
+    background: #fff;
+    color: #002366;
+}
+
+.subscription .image {
+    position: absolute;
+    bottom: 0;
+    right: 221px;
+}
+
+/* ========= Footer ============ */
+.footer {
+    margin-top: 55px;
+    padding: 50px 0 58px 0;
+}
+
+.footer .row-top {
+    display: flex;
+    gap: 185px;
+}
+
+.footer .content .row-bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 81px;
+}
+
+.footer .content .copyright {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #C2C2C2;
+}
+
+.footer .row-top .col .heading {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1C1C1D;
+}
+
+.footer .row-top .col .list .item {
+    margin-top: 18px;
+}
+
+.footer .row-top .col .list .item:first-child {
+    margin-top: 42px;
+}
+
+.footer .row-top .col .list .item a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #7A7A7E;
+
+    /* Ngan khong cho xuong dong */
+    white-space: nowrap;
+}
+
+.footer .row-top .col .desc {
+    margin-top: 40px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #7A7A7E;
+}
+
+.footer .row-top .col .social {
+    display: flex;
+    margin-top: 40px;
+    gap: 16px;
+}
+
+.footer .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: #F9F9F9;
+    border-radius: 3px;
+}
+
+.footer .social-link:hover {
+    background: #ebebeb;
+}
